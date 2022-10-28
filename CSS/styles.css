@@ -1,0 +1,125 @@
+body {
+    padding: 7% 15%;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    text-align: center;
+    position: relative;
+    font-size: 0.875rem;
+}
+
+h1 {
+    padding-bottom: 1.25rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    color:hsl(238, 29%, 16%)
+}
+
+.container {
+    background-color: hsl(240, 5%, 91%);
+    border-radius: 1.25rem;
+    text-align: left;
+    
+}
+
+.first-container {
+    background-image: url("bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    padding-right: 5rem;
+    background-position: 111% 67%;
+    overflow: hidden;
+}
+
+.image3 {
+    position: absolute;
+    left: 6rem;
+    top: 18.75rem;
+  
+}
+
+.image2 {
+    position: relative;
+    bottom: -15%;
+    right: 28%;
+    
+}
+
+.row .second-container {
+    padding: 4.375rem 5rem 5rem 2.5rem;
+    
+}
+
+.questionjs {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    color: hsl(238, 29%, 16%);
+    
+}
+
+.answer {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(240, 6%, 50%);
+}
+
+.question {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    color:  hsl(237, 12%, 33%);
+}
+
+.question:hover {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(14, 88%, 65%);
+}
+
+.question::after {
+    content: url("icon-arrow-down.svg");
+    float: right;
+}
+
+.questionJs {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    color: hsl(238, 29%, 16%);
+}
+
+.down::after {
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    -moz-transform:rotate(-180deg);
+    -webkit-transform:rotate(-180deg);
+    transform:rotate(-180deg);
+}
+
+@media (min-width: 375px) and (max-width: 991.5px) {
+    
+    body {
+        padding-top: 30%;
+    }
+    .first-container {
+        background-image: url("bg-pattern-mobile.svg");
+        background-position: top center;
+        background-size: 80%;
+        overflow: visible;
+        padding: 0 10%;
+        height: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .row .second-container {
+        padding: 0 8% 8%;
+    }
+
+    .image3 {
+        display: none;
+    }
+
+    .image2 {
+       left: 0.1%;
+       bottom: 60%;
+       object-fit: fill;
+    }
+}
